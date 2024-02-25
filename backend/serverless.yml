@@ -1,0 +1,27 @@
+service: multiclassification_flowers
+
+plugins: 
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  timeout: 50
+
+functions:
+  handler:
+    handler: handler.health
+    events:
+      - http:
+          path: /health
+          method: get
+          cors: true
+
+  predict:
+    handler: handler.predict
+    events:
+      - http:
+          path: /predict
+          method: post
+          cors: true
+

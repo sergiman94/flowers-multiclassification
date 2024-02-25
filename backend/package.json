@@ -1,0 +1,20 @@
+{
+  "name": "multiclassification_flowers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "start": "npx serverless offline --stage dev --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "lambda-multipart-parser": "^1.0.1",
+    "serverless": "^3.38.0",
+    "serverless-offline": "^13.3.3",
+    "sharp": "^0.33.2"
+  }
+}
