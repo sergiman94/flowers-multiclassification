@@ -10,12 +10,12 @@ services:
     ports:
       - 3000:3000
       - 3002:3002
-  # frontend:
-  #   image: node:18
-  #   volumes:
-  #     - ./frontend:/frontend
-  #   working_dir: /frontend
-  #   command: sh -c "npm install --verbose && npm run start"
-  #   ports:
-  #     - 4000:4000
+  frontend:
+    image: node:18
+    volumes:
+      - ./frontend:/frontend
+    working_dir: /frontend
+    command: sh -c "npm install --verbose && npm run start"
+    ports:
+      - 4000:4000
     
